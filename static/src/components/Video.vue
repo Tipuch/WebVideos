@@ -10,7 +10,7 @@ export default {
   name: "Video",
   download_url: "",
   download_url_promise: null,
-  async beforeCreate() {
+  beforeCreate() {
     this.download_url_promise = axios
         .get('/video')
         .then(response => {
